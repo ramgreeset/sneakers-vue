@@ -1,22 +1,16 @@
-<!--
-SFC - single file component
-Логика и стили для компонента содержится в самом файле компонента
--->
-<!--
-setup - указывает что мы работаем с Composition API
--->
 <script setup>
-import FirstComponent from "@/components/Counter.vue";
+
 </script>
-<!--В template размещается верстка компонента, вся верстка вне template не отображается-->
 <template>
-  <h1>Привет</h1>
+  <body class="h-screen flex flex-col bg-green">
+  <header class="mt-14 container">
+  </header>
+  <main class="flex-grow container">
+    <h1 class="bg-white rounded-md shadow-xl">Hi,Pidor 1</h1>
+  </main>
 
-  <FirstComponent/>
+  <footer class="container">
+    <h2>hi,pidor1</h2>
+  </footer>
+  </body>
 </template>
-
-<!--
-scoped - указывает что стили применяются локально к текущему файлу
--->
-<style scoped>
-</style>
